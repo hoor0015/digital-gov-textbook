@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>목차 - 디지털 시대의 행정</title>
+<style>
+:root { --accent:#2b7a78; --sidebar-w:320px; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+       color:#1f2328; line-height:1.75; background:#fff; }
+a { color:#2f6fb0; text-decoration:none; }
+a:hover { text-decoration:underline; }
+nav.sidebar { position:fixed; top:0; left:0; bottom:0; width:var(--sidebar-w);
+  overflow-y:auto; background:#f9f8f5; border-right:1px solid #e7e3da; padding:22px 18px; }
+nav.sidebar h1 { font-size:1.02rem; line-height:1.45; margin:0 0 14px;
+  padding-bottom:12px; border-bottom:2px solid var(--accent); }
+nav.sidebar h1 a { color:#1f2328; }
+nav.sidebar ul { list-style:none; margin:0; padding:0; }
+nav.sidebar li.part { margin-top:14px; font-weight:700; font-size:.92rem; color:#57606a; }
+nav.sidebar li.chap { margin:4px 0 0 6px; font-size:.88rem; font-weight:600; }
+nav.sidebar li.sec { margin:2px 0 2px 20px; font-size:.83rem; font-weight:400; }
+nav.sidebar li.cur > a { color:#a33; }
+nav.sidebar .tag { display:inline-block; font-size:.72rem; font-weight:700; border-radius:3px;
+  padding:0 5px; margin-right:5px; vertical-align:1px; }
+nav.sidebar .t1 { background:#e3f1f1; color:#2b7a78; }
+nav.sidebar .t2 { background:#e7eefc; color:#2f6fb0; }
+main { margin-left:var(--sidebar-w); padding:36px 48px 80px; max-width:880px; }
+main h1 { font-size:1.7rem; border-bottom:3px solid var(--accent); padding-bottom:10px; }
+main h2 { font-size:1.32rem; margin-top:2.4em; border-bottom:1px solid #e7e3da; padding-bottom:6px; }
+main h3 { font-size:1.12rem; margin-top:1.8em; }
+main h4 { font-size:1.0rem; margin-top:1.5em; }
+main img { max-width:100%; display:block; margin:20px auto; border:1px solid #eee9df; border-radius:4px; }
+main table { border-collapse:collapse; margin:18px 0; font-size:.92rem; }
+main th, main td { border:1px solid #d9d4c9; padding:6px 12px; }
+main th { background:#f5f2ea; }
+main code { background:#f2f3f5; padding:1px 5px; border-radius:3px; font-size:.9em; }
+main pre { background:#f6f8fa; border:1px solid #e3e6ea; border-radius:6px;
+  padding:14px 16px; overflow-x:auto; line-height:1.5; }
+main pre code { background:none; padding:0; }
+main blockquote { margin:18px 0; padding:8px 18px; border-left:4px solid #cfc4ad;
+  background:#fbfaf7; color:#4b5563; }
+.pager { display:flex; justify-content:space-between; margin-top:56px;
+  padding-top:18px; border-top:1px solid #e7e3da; font-size:.95rem; }
+.pager a { max-width:46%; }
+.toc-part { margin-top:26px; font-size:1.1rem; }
+@media (max-width: 900px) {
+  nav.sidebar { position:static; width:auto; border-right:none; border-bottom:1px solid #e7e3da; }
+  main { margin-left:0; padding:24px 20px 60px; }
+}
+</style></head>
+<body>
+<nav class="sidebar"><h1><a href="index.html">디지털 시대의 행정</a></h1><ul>
+<li class="part">1부. AI와 공공부문</li>
+<li class="chap"><a href="w01-1.html"><span class="tag t1">1차시</span>1주차 강의의 문: 디지털 전환과 행정</a></li>
+<li class="chap"><a href="w01-2.html"><span class="tag t2">2차시</span>1주차 AI의 개념과 공공부문의 활용</a></li>
+<li class="part">2부. AI와 공공가치</li>
+<li class="chap"><a href="w02-1.html"><span class="tag t1">1차시</span>2주차 AI와 효율성 (1): 효율의 약속</a></li>
+<li class="chap"><a href="w02-2.html"><span class="tag t2">2차시</span>2주차 AI와 효율성 (2): 효율의 재검토</a></li>
+<li class="chap"><a href="w03-1.html"><span class="tag t1">1차시</span>3주차 AI와 투명성 (1): 알고리즘 불투명성</a></li>
+<li class="chap"><a href="w03-2.html"><span class="tag t2">2차시</span>3주차 AI와 투명성 (2): 설명가능성과 제도</a></li>
+<li class="chap"><a href="w04-1.html"><span class="tag t1">1차시</span>4주차 AI와 책임성 (1): 책임성의 도전</a></li>
+<li class="chap"><a href="w04-2.html"><span class="tag t2">2차시</span>4주차 AI와 책임성 (2): 책임의 배분과 제도</a></li>
+<li class="chap"><a href="w05-1.html"><span class="tag t1">1차시</span>5주차 AI와 형평성 (1): 알고리즘 편향의 원천</a></li>
+<li class="chap"><a href="w05-2.html"><span class="tag t2">2차시</span>5주차 AI와 형평성 (2): 차별 사례와 공정성</a></li>
+<li class="chap"><a href="w06-1.html"><span class="tag t1">1차시</span>6주차 AI와 민주주의 (1): 민주적 가치와 AI</a></li>
+<li class="chap"><a href="w06-2.html"><span class="tag t2">2차시</span>6주차 AI와 민주주의 (2): 시민참여와 숙의</a></li>
+<li class="chap"><a href="w07-1.html"><span class="tag t1">1차시</span>7주차 AI와 프라이버시 (1): 개인정보보호의 원리</a></li>
+<li class="chap"><a href="w07-2.html"><span class="tag t2">2차시</span>7주차 AI와 프라이버시 (2): 감시와 법제</a></li>
+<li class="part">3부. AI와 정책·제도</li>
+<li class="chap"><a href="w08-1.html"><span class="tag t1">1차시</span>8주차 AI와 정책과정 (1): 의제설정과 정책형성</a></li>
+<li class="chap"><a href="w08-2.html"><span class="tag t2">2차시</span>8주차 AI와 정책과정 (2): 집행과 평가</a></li>
+<li class="chap"><a href="w09-1.html"><span class="tag t1">1차시</span>9주차 AI 영향평가 (1): 왜, 무엇을 평가하는가</a></li>
+<li class="chap"><a href="w09-2.html"><span class="tag t2">2차시</span>9주차 AI 영향평가 (2): 제도와 실무</a></li>
+<li class="chap"><a href="w10-1.html"><span class="tag t1">1차시</span>10주차 AI와 거버넌스 (1): 개념과 층위</a></li>
+<li class="chap"><a href="w10-2.html"><span class="tag t2">2차시</span>10주차 AI와 거버넌스 (2): 국내외 거버넌스 체계</a></li>
+<li class="chap"><a href="w11-1.html"><span class="tag t1">1차시</span>11주차 AI와 규제 (1): 왜, 어떻게 규제하는가</a></li>
+<li class="chap"><a href="w11-2.html"><span class="tag t2">2차시</span>11주차 AI와 규제 (2): EU AI Act와 한국 AI기본법</a></li>
+<li class="part">4부. 전망</li>
+<li class="chap"><a href="w12-1.html"><span class="tag t1">1차시</span>12주차 생성형 AI와 행정 (1): 새로운 물결</a></li>
+<li class="chap"><a href="w12-2.html"><span class="tag t2">2차시</span>12주차 생성형 AI와 행정 (2): 공공부문 도입과 쟁점</a></li>
+<li class="chap"><a href="w13-1.html"><span class="tag t1">1차시</span>13주차 종합 (1): 공공가치의 렌즈로 다시 보기</a></li>
+<li class="chap"><a href="w13-2.html"><span class="tag t2">2차시</span>13주차 종합 (2): 디지털 시대 행정의 미래</a></li>
+</ul></nav>
+<main><h1>디지털 시대의 행정</h1>
+<p><strong>AI와 공공가치로 읽는 행정의 현재와 미래.</strong> AI와 정보통신기술의 발전이 행정과 정책에 미치는 영향을 공공가치의 렌즈로 탐구하는 학부 수준의 강의 교재입니다. 13개 주차가 각각 1차시와 2차시로 나뉘며, 효율성, 투명성, 책임성, 형평성, 민주주의, 프라이버시의 여섯 가치와 정책과정, 영향평가, 거버넌스, 규제의 네 제도를 실제 사례와 함께 다룹니다. 법제도와 사례는 2026년 기준으로 갱신했습니다.</p>
+<p>광운대학교 행정학과 조교수 김경동(kdkim@kw.ac.kr)</p>
+<h2 class="toc-part">1부. AI와 공공부문</h2><ul>
+<li style="margin-top:10px"><strong><a href="w01-1.html">1주차 1차시 · 강의의 문: 디지털 전환과 행정</a></strong><ul>
+<li><a href="w01-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w01-1.html#11-행정은-왜-AI를-만나게-되었는가">1.1 행정은 왜 AI를 만나게 되었는가</a></li>
+<li><a href="w01-1.html#12-전자정부에서-지능정부로">1.2 전자정부에서 지능정부로</a></li>
+<li><a href="w01-1.html#13-공공가치의-렌즈-이-교재의-관점">1.3 공공가치의 렌즈: 이 교재의 관점</a></li>
+<li><a href="w01-1.html#14-교재-지도와-공부법">1.4 교재 지도와 공부법</a></li>
+<li><a href="w01-1.html#요약">요약</a></li>
+<li><a href="w01-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w01-2.html">1주차 2차시 · AI의 개념과 공공부문의 활용</a></strong><ul>
+<li><a href="w01-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w01-2.html#21-AI란-무엇인가-정의와-역사">2.1 AI란 무엇인가: 정의와 역사</a></li>
+<li><a href="w01-2.html#22-기계학습딥러닝의-기본-원리">2.2 기계학습·딥러닝의 기본 원리</a></li>
+<li><a href="w01-2.html#23-공공부문-AI-활용의-지형">2.3 공공부문 AI 활용의 지형</a></li>
+<li><a href="w01-2.html#24-민간과-다른-공공부문의-조건">2.4 민간과 다른 공공부문의 조건</a></li>
+<li><a href="w01-2.html#요약">요약</a></li>
+<li><a href="w01-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+</ul>
+<h2 class="toc-part">2부. AI와 공공가치</h2><ul>
+<li style="margin-top:10px"><strong><a href="w02-1.html">2주차 1차시 · AI와 효율성 (1): 효율의 약속</a></strong><ul>
+<li><a href="w02-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w02-1.html#11-행정가치로서-효율성">1.1 행정가치로서 효율성</a></li>
+<li><a href="w02-1.html#12-AI는-어떻게-효율을-높이는가">1.2 AI는 어떻게 효율을 높이는가</a></li>
+<li><a href="w02-1.html#13-사례-읽기-약속이-실현되는-현장">1.3 사례 읽기: 약속이 실현되는 현장</a></li>
+<li><a href="w02-1.html#14-쟁점과-함의-약속의-조건">1.4 쟁점과 함의: 약속의 조건</a></li>
+<li><a href="w02-1.html#요약">요약</a></li>
+<li><a href="w02-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w02-2.html">2주차 2차시 · AI와 효율성 (2): 효율의 재검토</a></strong><ul>
+<li><a href="w02-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w02-2.html#21-효율성-개선의-실증-증거">2.1 효율성 개선의 실증 증거</a></li>
+<li><a href="w02-2.html#22-도입운영의-숨은-비용">2.2 도입·운영의 숨은 비용</a></li>
+<li><a href="w02-2.html#23-효율성과-다른-가치의-긴장">2.3 효율성과 다른 가치의 긴장</a></li>
+<li><a href="w02-2.html#24-효율-중심-도입의-함정">2.4 효율 중심 도입의 함정</a></li>
+<li><a href="w02-2.html#요약">요약</a></li>
+<li><a href="w02-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w03-1.html">3주차 1차시 · AI와 투명성 (1): 알고리즘 불투명성</a></strong><ul>
+<li><a href="w03-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w03-1.html#11-행정가치로서-투명성">1.1 행정가치로서 투명성</a></li>
+<li><a href="w03-1.html#12-투명성은-언제나-좋은가">1.2 투명성은 언제나 좋은가</a></li>
+<li><a href="w03-1.html#13-AI가-만드는-새로운-불투명성">1.3 AI가 만드는 새로운 불투명성</a></li>
+<li><a href="w03-1.html#14-블랙박스-문제의-세-원천">1.4 블랙박스 문제의 세 원천</a></li>
+<li><a href="w03-1.html#15-불투명성의-행정적-결과">1.5 불투명성의 행정적 결과</a></li>
+<li><a href="w03-1.html#요약">요약</a></li>
+<li><a href="w03-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w03-2.html">3주차 2차시 · AI와 투명성 (2): 설명가능성과 제도</a></strong><ul>
+<li><a href="w03-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w03-2.html#21-설명가능-AIXAI-블랙박스-안을-들여다보는-기술">2.1 설명가능 AI(XAI): 블랙박스 안을 들여다보는 기술</a></li>
+<li><a href="w03-2.html#22-설명요구권과-정보공개">2.2 설명요구권과 정보공개</a></li>
+<li><a href="w03-2.html#23-알고리즘-공개-논쟁">2.3 알고리즘 공개 논쟁</a></li>
+<li><a href="w03-2.html#24-투명성-확보의-제도-설계">2.4 투명성 확보의 제도 설계</a></li>
+<li><a href="w03-2.html#요약">요약</a></li>
+<li><a href="w03-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w04-1.html">4주차 1차시 · AI와 책임성 (1): 책임성의 도전</a></strong><ul>
+<li><a href="w04-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w04-1.html#11-행정가치로서-책임성-누구에게-무엇을-답하는가">1.1 행정가치로서 책임성: 누구에게, 무엇을 답하는가</a></li>
+<li><a href="w04-1.html#12-AI-의사결정과-책임-공백">1.2 AI 의사결정과 책임 공백</a></li>
+<li><a href="w04-1.html#13-많은-손과-많은-것들-공백은-왜-구조적인가">1.3 많은 손과 많은 것들: 공백은 왜 구조적인가</a></li>
+<li><a href="w04-1.html#14-인간-개입의-논리와-한계">1.4 인간 개입의 논리와 한계</a></li>
+<li><a href="w04-1.html#요약">요약</a></li>
+<li><a href="w04-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w04-2.html">4주차 2차시 · AI와 책임성 (2): 책임의 배분과 제도</a></strong><ul>
+<li><a href="w04-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w04-2.html#21-책임-배분의-프레임워크-공백에서-지도로">2.1 책임 배분의 프레임워크: 공백에서 지도로</a></li>
+<li><a href="w04-2.html#22-공무원개발자기관의-책임-두-스캔들이-남긴-교훈">2.2 공무원·개발자·기관의 책임: 두 스캔들이 남긴 교훈</a></li>
+<li><a href="w04-2.html#23-감사와-이의제기-사후-책임성의-두-관문">2.3 감사와 이의제기: 사후 책임성의 두 관문</a></li>
+<li><a href="w04-2.html#24-제도-설계의-과제">2.4 제도 설계의 과제</a></li>
+<li><a href="w04-2.html#요약">요약</a></li>
+<li><a href="w04-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w05-1.html">5주차 1차시 · AI와 형평성 (1): 알고리즘 편향의 원천</a></strong><ul>
+<li><a href="w05-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w05-1.html#11-행정가치로서-형평성">1.1 행정가치로서 형평성</a></li>
+<li><a href="w05-1.html#12-편향은-어디서-오는가-1-데이터">1.2 편향은 어디서 오는가 (1): 데이터</a></li>
+<li><a href="w05-1.html#13-편향은-어디서-오는가-2-설계와-운용">1.3 편향은 어디서 오는가 (2): 설계와 운용</a></li>
+<li><a href="w05-1.html#14-편향의-증폭-구조-피드백-루프">1.4 편향의 증폭 구조: 피드백 루프</a></li>
+<li><a href="w05-1.html#요약">요약</a></li>
+<li><a href="w05-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w05-2.html">5주차 2차시 · AI와 형평성 (2): 차별 사례와 공정성</a></strong><ul>
+<li><a href="w05-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w05-2.html#21-차별-사례-읽기-네-개의-장면">2.1 차별 사례 읽기: 네 개의 장면</a></li>
+<li><a href="w05-2.html#22-공정성의-여러-기준과-그-상충">2.2 공정성의 여러 기준과 그 상충</a></li>
+<li><a href="w05-2.html#23-편향-완화-기법과-그-한계">2.3 편향 완화 기법과 그 한계</a></li>
+<li><a href="w05-2.html#24-디지털-격차와-형평">2.4 디지털 격차와 형평</a></li>
+<li><a href="w05-2.html#요약">요약</a></li>
+<li><a href="w05-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w06-1.html">6주차 1차시 · AI와 민주주의 (1): 민주적 가치와 AI</a></strong><ul>
+<li><a href="w06-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w06-1.html#11-민주주의의-조건과-AI">1.1 민주주의의 조건과 AI</a></li>
+<li><a href="w06-1.html#12-알고리즘과-여론-형성">1.2 알고리즘과 여론 형성</a></li>
+<li><a href="w06-1.html#13-허위정보와-선거">1.3 허위정보와 선거</a></li>
+<li><a href="w06-1.html#14-권력-집중의-문제">1.4 권력 집중의 문제</a></li>
+<li><a href="w06-1.html#요약">요약</a></li>
+<li><a href="w06-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w06-2.html">6주차 2차시 · AI와 민주주의 (2): 시민참여와 숙의</a></strong><ul>
+<li><a href="w06-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w06-2.html#21-디지털-시민참여의-진화">2.1 디지털 시민참여의 진화</a></li>
+<li><a href="w06-2.html#22-AI-시대의-숙의민주주의">2.2 AI 시대의 숙의민주주의</a></li>
+<li><a href="w06-2.html#23-시민-감시와-대항-권력">2.3 시민 감시와 대항 권력</a></li>
+<li><a href="w06-2.html#24-민주적-AI-거버넌스의-조건">2.4 민주적 AI 거버넌스의 조건</a></li>
+<li><a href="w06-2.html#요약">요약</a></li>
+<li><a href="w06-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w07-1.html">7주차 1차시 · AI와 프라이버시 (1): 개인정보보호의 원리</a></strong><ul>
+<li><a href="w07-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w07-1.html#11-프라이버시라는-가치">1.1 프라이버시라는 가치</a></li>
+<li><a href="w07-1.html#12-개인정보보호의-기본-원칙">1.2 개인정보보호의 기본 원칙</a></li>
+<li><a href="w07-1.html#13-AI가-바꾸는-프라이버시-지형">1.3 AI가 바꾸는 프라이버시 지형</a></li>
+<li><a href="w07-1.html#14-공공데이터-활용과-개인정보의-긴장">1.4 공공데이터 활용과 개인정보의 긴장</a></li>
+<li><a href="w07-1.html#요약">요약</a></li>
+<li><a href="w07-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w07-2.html">7주차 2차시 · AI와 프라이버시 (2): 감시와 법제</a></strong><ul>
+<li><a href="w07-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w07-2.html#21-감시-기술과-안면인식">2.1 감시 기술과 안면인식</a></li>
+<li><a href="w07-2.html#22-국가-감시의-쟁점">2.2 국가 감시의 쟁점</a></li>
+<li><a href="w07-2.html#23-개인정보보호-법제-2026년의-지도">2.3 개인정보보호 법제: 2026년의 지도</a></li>
+<li><a href="w07-2.html#24-AI-시대의-프라이버시-보호-설계">2.4 AI 시대의 프라이버시 보호 설계</a></li>
+<li><a href="w07-2.html#요약">요약</a></li>
+<li><a href="w07-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+</ul>
+<h2 class="toc-part">3부. AI와 정책·제도</h2><ul>
+<li style="margin-top:10px"><strong><a href="w08-1.html">8주차 1차시 · AI와 정책과정 (1): 의제설정과 정책형성</a></strong><ul>
+<li><a href="w08-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w08-1.html#11-정책과정-모형과-AI-지도를-먼저-그린다">1.1 정책과정 모형과 AI: 지도를 먼저 그린다</a></li>
+<li><a href="w08-1.html#12-데이터-기반-문제-인지와-의제설정">1.2 데이터 기반 문제 인지와 의제설정</a></li>
+<li><a href="w08-1.html#13-정책형성과-분석에서의-AI-예측-시뮬레이션-디지털-트윈">1.3 정책형성과 분석에서의 AI: 예측, 시뮬레이션, 디지털 트윈</a></li>
+<li><a href="w08-1.html#요약">요약</a></li>
+<li><a href="w08-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w08-2.html">8주차 2차시 · AI와 정책과정 (2): 집행과 평가</a></strong><ul>
+<li><a href="w08-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w08-2.html#21-정책집행에서의-AI-자동화된-행정처분과-급여-지급">2.1 정책집행에서의 AI: 자동화된 행정처분과 급여 지급</a></li>
+<li><a href="w08-2.html#22-일선관료제의-변화-재량은-어디로-이동하는가">2.2 일선관료제의 변화: 재량은 어디로 이동하는가</a></li>
+<li><a href="w08-2.html#23-정책평가와-AI-상시-평가의-시대">2.3 정책평가와 AI: 상시 평가의 시대</a></li>
+<li><a href="w08-2.html#24-증거기반-정책의-재구성">2.4 증거기반 정책의 재구성</a></li>
+<li><a href="w08-2.html#요약">요약</a></li>
+<li><a href="w08-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w09-1.html">9주차 1차시 · AI 영향평가 (1): 왜, 무엇을 평가하는가</a></strong><ul>
+<li><a href="w09-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w09-1.html#11-왜-사전에-평가하는가">1.1 왜 '사전에' 평가하는가</a></li>
+<li><a href="w09-1.html#12-영향평가라는-도구의-계보">1.2 영향평가라는 도구의 계보</a></li>
+<li><a href="w09-1.html#13-AI-영향평가의-개념과-목적">1.3 AI 영향평가의 개념과 목적</a></li>
+<li><a href="w09-1.html#14-무엇을-평가하는가-평가-항목과-프레임워크">1.4 무엇을 평가하는가: 평가 항목과 프레임워크</a></li>
+<li><a href="w09-1.html#15-위험-기반-접근-모든-AI를-같은-강도로-평가하지-않는다">1.5 위험 기반 접근: 모든 AI를 같은 강도로 평가하지 않는다</a></li>
+<li><a href="w09-1.html#요약">요약</a></li>
+<li><a href="w09-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w09-2.html">9주차 2차시 · AI 영향평가 (2): 제도와 실무</a></strong><ul>
+<li><a href="w09-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w09-2.html#21-캐나다-자동화된-의사결정-지침과-알고리즘-영향평가">2.1 캐나다: 자동화된 의사결정 지침과 알고리즘 영향평가</a></li>
+<li><a href="w09-2.html#22-미국과-EU-좌초한-연방-법안-실험하는-주-그리고-기본권-영향평가">2.2 미국과 EU: 좌초한 연방 법안, 실험하는 주, 그리고 기본권 영향평가</a></li>
+<li><a href="w09-2.html#23-한국-법령의-지층과-AI기본법의-영향평가">2.3 한국: 법령의 지층과 AI기본법의 영향평가</a></li>
+<li><a href="w09-2.html#24-실효성-논쟁-평가서가-쌓이면-위험이-줄어드는가">2.4 실효성 논쟁: 평가서가 쌓이면 위험이 줄어드는가</a></li>
+<li><a href="w09-2.html#25-영향평가-설계의-과제">2.5 영향평가 설계의 과제</a></li>
+<li><a href="w09-2.html#요약">요약</a></li>
+<li><a href="w09-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w10-1.html">10주차 1차시 · AI와 거버넌스 (1): 개념과 층위</a></strong><ul>
+<li><a href="w10-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w10-1.html#11-AI-거버넌스란-무엇인가-정부에서-거버넌스로">1.1 AI 거버넌스란 무엇인가: 정부에서 거버넌스로</a></li>
+<li><a href="w10-1.html#12-거버넌스-패러다임의-진화-관료제에서-알고리즘까지">1.2 거버넌스 패러다임의 진화: 관료제에서 알고리즘까지</a></li>
+<li><a href="w10-1.html#13-거버넌스의-층위-국제-국가-조직">1.3 거버넌스의 층위: 국제, 국가, 조직</a></li>
+<li><a href="w10-1.html#14-원칙에서-실행으로-윤리원칙의-한계와-제도화">1.4 원칙에서 실행으로: 윤리원칙의 한계와 제도화</a></li>
+<li><a href="w10-1.html#15-이해관계자와-참여">1.5 이해관계자와 참여</a></li>
+<li><a href="w10-1.html#요약">요약</a></li>
+<li><a href="w10-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w10-2.html">10주차 2차시 · AI와 거버넌스 (2): 국내외 거버넌스 체계</a></strong><ul>
+<li><a href="w10-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w10-2.html#21-국제기구의-AI-거버넌스">2.1 국제기구의 AI 거버넌스</a></li>
+<li><a href="w10-2.html#22-주요국-비교-EU-미국-중국">2.2 주요국 비교: EU, 미국, 중국</a></li>
+<li><a href="w10-2.html#23-한국의-AI-거버넌스-2026년-기준">2.3 한국의 AI 거버넌스 (2026년 기준)</a></li>
+<li><a href="w10-2.html#24-조직-수준의-거버넌스-공공기관의-AI-운영-체계">2.4 조직 수준의 거버넌스: 공공기관의 AI 운영 체계</a></li>
+<li><a href="w10-2.html#요약">요약</a></li>
+<li><a href="w10-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w11-1.html">11주차 1차시 · AI와 규제 (1): 왜, 어떻게 규제하는가</a></strong><ul>
+<li><a href="w11-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w11-1.html#11-왜-규제하는가-정당화의-세-갈래">1.1 왜 규제하는가: 정당화의 세 갈래</a></li>
+<li><a href="w11-1.html#12-어떻게-규제하는가-자율규제에서-강행규제까지">1.2 어떻게 규제하는가: 자율규제에서 강행규제까지</a></li>
+<li><a href="w11-1.html#13-위험-기반-규제-오늘날의-지배적-설계-원리">1.3 위험 기반 규제: 오늘날의 지배적 설계 원리</a></li>
+<li><a href="w11-1.html#14-혁신과-규제의-긴장-딜레마와-장치들">1.4 혁신과 규제의 긴장: 딜레마와 장치들</a></li>
+<li><a href="w11-1.html#요약">요약</a></li>
+<li><a href="w11-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w11-2.html">11주차 2차시 · AI와 규제 (2): EU AI Act와 한국 AI기본법</a></strong><ul>
+<li><a href="w11-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w11-2.html#21-EU-AI-Act의-구조-위험의-피라미드">2.1 EU AI Act의 구조: 위험의 피라미드</a></li>
+<li><a href="w11-2.html#22-2026년-EU-AI-Act는-어디까지-시행되었나">2.2 2026년, EU AI Act는 어디까지 시행되었나</a></li>
+<li><a href="w11-2.html#23-한국-AI기본법-진흥과-규제의-이중주">2.3 한국 AI기본법: 진흥과 규제의 이중주</a></li>
+<li><a href="w11-2.html#24-주요국의-선택-미국-영국-일본-중국의-2026년">2.4 주요국의 선택: 미국, 영국, 일본, 중국의 2026년</a></li>
+<li><a href="w11-2.html#25-규제의-실효성과-남은-쟁점">2.5 규제의 실효성과 남은 쟁점</a></li>
+<li><a href="w11-2.html#요약">요약</a></li>
+<li><a href="w11-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+</ul>
+<h2 class="toc-part">4부. 전망</h2><ul>
+<li style="margin-top:10px"><strong><a href="w12-1.html">12주차 1차시 · 생성형 AI와 행정 (1): 새로운 물결</a></strong><ul>
+<li><a href="w12-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w12-1.html#11-생성형-AI의-원리-다음-말을-예측하는-기계">1.1 생성형 AI의 원리: 다음 말을 예측하는 기계</a></li>
+<li><a href="w12-1.html#12-AI-에이전트의-등장-답변에서-실행으로">1.2 AI 에이전트의 등장: 답변에서 실행으로</a></li>
+<li><a href="w12-1.html#13-생성형-AI가-바꾸는-행정-업무">1.3 생성형 AI가 바꾸는 행정 업무</a></li>
+<li><a href="w12-1.html#14-판별형-AI-논의와-무엇이-다른가-환각-범용성-접근성">1.4 판별형 AI 논의와 무엇이 다른가: 환각, 범용성, 접근성</a></li>
+<li><a href="w12-1.html#요약">요약</a></li>
+<li><a href="w12-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w12-2.html">12주차 2차시 · 생성형 AI와 행정 (2): 공공부문 도입과 쟁점</a></strong><ul>
+<li><a href="w12-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w12-2.html#21-한국-개인의-실험에서-정부의-기반으로">2.1 한국: 개인의 실험에서 정부의 기반으로</a></li>
+<li><a href="w12-2.html#22-해외-같은-기술-다른-접근">2.2 해외: 같은 기술, 다른 접근</a></li>
+<li><a href="w12-2.html#23-공무원의-AI-활용-가이드라인">2.3 공무원의 AI 활용 가이드라인</a></li>
+<li><a href="w12-2.html#24-환각보안저작권-세-개의-마찰-지점">2.4 환각·보안·저작권: 세 개의 마찰 지점</a></li>
+<li><a href="w12-2.html#25-공직-역량의-재정의">2.5 공직 역량의 재정의</a></li>
+<li><a href="w12-2.html#요약">요약</a></li>
+<li><a href="w12-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w13-1.html">13주차 1차시 · 종합 (1): 공공가치의 렌즈로 다시 보기</a></strong><ul>
+<li><a href="w13-1.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w13-1.html#11-여섯-가치를-한-표에-놓기">1.1 여섯 가치를 한 표에 놓기</a></li>
+<li><a href="w13-1.html#12-가치-간-상충과-조율">1.2 가치 간 상충과 조율</a></li>
+<li><a href="w13-1.html#13-제도는-가치-충돌의-조정-장치다-8-11주-다시-읽기">1.3 제도는 가치 충돌의 조정 장치다: 8-11주 다시 읽기</a></li>
+<li><a href="w13-1.html#14-하나의-사례로-종합-점검-네덜란드-아동수당-스캔들">1.4 하나의 사례로 종합 점검: 네덜란드 아동수당 스캔들</a></li>
+<li><a href="w13-1.html#요약">요약</a></li>
+<li><a href="w13-1.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+<li style="margin-top:10px"><strong><a href="w13-2.html">13주차 2차시 · 종합 (2): 디지털 시대 행정의 미래</a></strong><ul>
+<li><a href="w13-2.html#이-장에서-배우는-것">이 장에서 배우는 것</a></li>
+<li><a href="w13-2.html#21-기술-낙관론과-비관론-사이">2.1 기술 낙관론과 비관론 사이</a></li>
+<li><a href="w13-2.html#22-자동화가-아니라-보강-인간-AI-협업-행정의-상">2.2 자동화가 아니라 보강: 인간-AI 협업 행정의 상</a></li>
+<li><a href="w13-2.html#23-공직자에게-필요한-역량">2.3 공직자에게 필요한 역량</a></li>
+<li><a href="w13-2.html#24-남는-질문들">2.4 남는 질문들</a></li>
+<li><a href="w13-2.html#요약">요약</a></li>
+<li><a href="w13-2.html#토론복습-문제">토론·복습 문제</a></li>
+</ul></li>
+</ul><div class="pager"><span></span><span><a href="w01-1.html">1주차 1차시. 강의의 문: 디지털 전환과 행정 →</a></span></div></main>
+</body></html>
